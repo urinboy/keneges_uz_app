@@ -1,9 +1,93 @@
 <x-app-layout>
     <x-slot name="header">
-        {{ __('Dashboard') }}
+        {{ __('pages.dashboard') }}
     </x-slot>
 
-    
+    <div id="carouselExampleCaptions" class="relative" data-te-carousel-init data-te-carousel-slide>
+        <div class="absolute right-0 bottom-0 left-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0">
+            <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="0" data-te-carousel-active
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="1"
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-label="Slide 2"></button>
+            <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="2"
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+            <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                data-te-carousel-active data-te-carousel-item style="backface-visibility: hidden">
+                <div class="relative overflow-hidden bg-cover bg-no-repeat" style="background-position: 50%">
+                    <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(123).jpg" class="block w-full" />
+                    <div
+                        class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-50">
+                    </div>
+                </div>
+                <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                    <h5 class="text-xl">First slide label</h5>
+                    <p>
+                        Some representative placeholder content for the first slide.
+                    </p>
+                </div>
+            </div>
+            <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                data-te-carousel-item style="backface-visibility: hidden">
+                <div class="relative overflow-hidden bg-cover bg-no-repeat" style="background-position: 50%">
+                    <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(124).jpg" class="block w-full" />
+                    <div
+                        class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-50">
+                    </div>
+                </div>
+                <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                    <h5 class="text-xl">Second slide label</h5>
+                    <p>
+                        Some representative placeholder content for the second slide.
+                    </p>
+                </div>
+            </div>
+            <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                data-te-carousel-item style="backface-visibility: hidden">
+                <div class="relative overflow-hidden bg-cover bg-no-repeat" style="background-position: 50%">
+                    <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(125).jpg" class="block w-full" />
+                    <div
+                        class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-50">
+                    </div>
+                </div>
+                <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                    <h5 class="text-xl">Third slide label</h5>
+                    <p>
+                        Some representative placeholder content for the third slide.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button
+            class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+            type="button" data-te-target="#carouselExampleCaptions" data-te-slide="prev">
+            <span class="inline-block h-8 w-8">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="h-6 w-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+            </span>
+            <span
+                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+        </button>
+        <button
+            class="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+            type="button" data-te-target="#carouselExampleCaptions" data-te-slide="next">
+            <span class="inline-block h-8 w-8">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="h-6 w-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </span>
+            <span
+                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+        </button>
+    </div>
+
     <div class="py-2">
         <div class="max-w-7xl mx-auto sm:px-2 lg:px-3">
             <div class="bg-white dark:bg-gray-800 dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
@@ -14,8 +98,8 @@
                             <div class="relative mb-12 px-3 lg:mb-0">
                                 <div class="mb-2 flex justify-center">
                                     <span class="text-primary">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                            fill="currentColor" class="h-14 w-14">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="h-14 w-14">
                                             <path
                                                 d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z" />
                                         </svg>
@@ -30,8 +114,8 @@
                             <div class="relative mb-12 px-3 lg:mb-0">
                                 <div class="mb-2 flex justify-center">
                                     <span class="text-primary">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                            fill="currentColor" class="h-14 w-14">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="h-14 w-14">
                                             <path
                                                 d="M11.644 1.59a.75.75 0 01.712 0l9.75 5.25a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.712 0l-9.75-5.25a.75.75 0 010-1.32l9.75-5.25z" />
                                             <path
@@ -92,7 +176,7 @@
             </div>
         </div>
     </div>
-    
+
 
     {{-- <!-- Cards -->
     <div class="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
@@ -210,8 +294,8 @@
                     </a>
                 </div>
 
-                <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg" data-mdb-ripple="true"
-                    data-mdb-ripple-color="light">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg"
+                    data-mdb-ripple="true" data-mdb-ripple-color="light">
                     <img src="https://mdbootstrap.com/img/new/standard/nature/044.jpg" class="w-full" />
                     <a href="#!">
                         <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
@@ -228,8 +312,8 @@
                     </a>
                 </div>
 
-                <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg" data-mdb-ripple="true"
-                    data-mdb-ripple-color="light">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg"
+                    data-mdb-ripple="true" data-mdb-ripple-color="light">
                     <img src="https://mdbootstrap.com/img/new/standard/nature/045.jpg" class="w-full" />
                     <a href="#!">
                         <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
@@ -246,8 +330,8 @@
                     </a>
                 </div>
 
-                <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg" data-mdb-ripple="true"
-                    data-mdb-ripple-color="light">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg"
+                    data-mdb-ripple="true" data-mdb-ripple-color="light">
                     <img src="https://mdbootstrap.com/img/new/standard/nature/047.jpg" class="w-full" />
                     <a href="#!">
                         <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
@@ -264,8 +348,8 @@
                     </a>
                 </div>
 
-                <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg" data-mdb-ripple="true"
-                    data-mdb-ripple-color="light">
+                <div class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg"
+                    data-mdb-ripple="true" data-mdb-ripple-color="light">
                     <img src="https://mdbootstrap.com/img/new/standard/nature/028.jpg" class="w-full" />
                     <a href="#!">
                         <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
@@ -413,4 +497,4 @@
     </div>
     <!-- Container for demo purpose -->
 
-    </x-app-layout>
+</x-app-layout>

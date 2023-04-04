@@ -36,7 +36,7 @@
                     <img class="object-cover w-8 h-8 mr-2 rounded-full" src="{{ asset('/favicon.png') }}"
                         alt="{{ config('app.name', 'Laravel') }}" aria-hidden="true" />
                     <p class="mt-1 flex justify-center align-center text-blue-600 font-semibold">
-                        {{ Auth::user()->name }}
+                        {{-- {{ Auth::user()->name }} --}}
                     </p>
                 </button>
                 <template x-if="isProfileMenuOpen">
@@ -53,7 +53,23 @@
                                     <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z">
                                     </path>
                                 </svg>
-                                <span>{{ __('Profile') }}</span>
+                                <span>{{ Auth::user()->name }}</span>
+                            </a>
+                        </li>
+                        <li class="flex">
+                            <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+                                href="{{ route('profile.edit') }}">
+                                {{-- <svg class="w-4 h-4 mr-3" aria-hidden="true" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z">
+                                    </path>
+                                </svg> --}}
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-3">
+                                    <path stroke-linecap="round"
+                                        d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
+                                </svg>
+                                <span>{{ Auth::user()->email }}</span>
                             </a>
                         </li>
 
@@ -73,7 +89,7 @@
                                             d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1">
                                         </path>
                                     </svg>
-                                    <span>{{ __('Log Out') }}</span>
+                                    <span>{{ __('auth.logout') }}</span>
                                 </a>
                             </form>
                         </li>

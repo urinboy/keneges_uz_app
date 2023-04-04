@@ -12,7 +12,6 @@ return [
     'failed' => 'Bu hisob ma\'lumotlari bizning yozuvlarimizga mos kelmaydi.',
     'password' => 'Taqdim etilgan parol noto\'g\'ri.',
     'throttle' => 'Kirish uchun juda ko\'p urinishlar. Iltimos, :seconds soniyadan keyin qayta urinib ko\'ring.',
-    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
     'login'   => 'Kirish',
     'register'   => 'Ro\'yxatdan o\'tish',
     'aleady_register'   => 'Allaqachon ro\'yxatdan o\'tganmisiz?',
@@ -21,5 +20,9 @@ return [
     'email'   => 'Elektron pochta',
     'password'   => 'Parol',
     'cpassword'   => 'Parolni tasdiqlash',
+    'upassword'   => 'Parolni yangilash',
+    'curpassword'   => 'Joriy parol',
+    'newpassword'   => 'Yangi parol',
+    'delaccount'   => 'Hisobni o\'chirish',
 
 ];
