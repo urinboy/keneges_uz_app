@@ -33,8 +33,13 @@
                     class="flex justify-between align-center  rounded-full focus:shadow-outline-blue focus:outline-none"
                     @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account"
                     aria-haspopup="true">
-                    <img class="object-cover w-8 h-8 mr-2 rounded-full" src="{{ asset('/favicon.png') }}"
-                        alt="{{ config('app.name', 'Laravel') }}" aria-hidden="true" />
+                    <div class="relative">
+                        <img class="w-10 h-10 rounded-full" src="/favicon.png" alt="">
+                        <span
+                            class="bottom-0 left-7 absolute  w-3 h-3 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"></span>
+                    </div>
+                    {{-- <img class="object-cover w-8 h-8 mr-2 rounded-full" src="{{ asset('/favicon.png') }}"
+                        alt="{{ config('app.name', 'Laravel') }}" aria-hidden="true" /> --}}
                     <p class="mt-1 flex justify-center align-center text-blue-600 font-semibold">
                         {{-- {{ Auth::user()->name }} --}}
                     </p>

@@ -15,5 +15,6 @@ return [
     "settings" => "Sozlamalar",
     "faq" => "Savol javob",
     "news" => "Yangiliklar",
+    "blocks" => "Bloklar",
 
 ];
