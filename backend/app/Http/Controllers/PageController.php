@@ -19,4 +19,9 @@ class PageController extends Controller
     public function blocks(){
         return view('blocks');
     }
+
+    # foyiz uchun
+    public function foyiz(){
+        return view('pages.foyiz');
+    }
 }

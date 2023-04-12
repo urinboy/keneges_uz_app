@@ -2,7 +2,7 @@
 
 @php
     
-    $classes = $active ?? false ? 'inline-flex items-center justify-between w-full  px-2 py-1 text-sm font-semibold text-gray-800 transition-colors duration-150 rounded-md bg-gray-100 hover:text-gray-800 dark:bg-gray-800 dark:hover:text-gray-200 dark:text-gray-100' : 'inline-flex items-center justify-between w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200';
+    $classes = $active ?? false ? 'inline-flex items-center w-full  px-2 py-1 text-sm font-semibold text-gray-800 transition-colors duration-150 rounded-md bg-gray-100 hover:text-gray-800 dark:bg-gray-800 dark:hover:text-gray-200 dark:text-gray-100' : 'inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200';
     
 @endphp
 

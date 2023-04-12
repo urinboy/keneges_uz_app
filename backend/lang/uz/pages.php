@@ -16,5 +16,7 @@ return [
     "faq" => "Savol javob",
     "news" => "Yangiliklar",
     "blocks" => "Bloklar",
+    "users" => "Foydalanuvchilar",
+    "roles" => "Ro\'llar",
 
 ];

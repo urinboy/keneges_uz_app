@@ -5,13 +5,26 @@
         class="flex justify-center align-middle font-semibold rounded-md focus:outline-none focus:shadow-outline-green"
         @click="toggleNotificationsMenu" @keydown.escape="closeNotificationsMenu" aria-label="Notifications"
         aria-haspopup="true">
-        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        {{-- <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
-        </svg>
+        </svg> --}}
         @foreach (config('app.available_locales') as $locale)
             @if (app()->getLocale() == $locale)
-                {{ strtoupper($locale) }}
+                @switch(strtolower($locale))
+                    @case('uz')
+                        <img src="/assets/images/uz-92x50.png" class="w-8 h-4 my-1" alt="">
+                        {{-- {{ strtoupper($locale) }} --}}
+                    @break
+
+                    @case('qr')
+                        <img src="/assets/images/qr-92x54.png" class="w-8 h-4 my-1" alt="">
+                        {{-- {{ strtoupper($locale) }} --}}
+                    @break
+
+                    @default
+                @endswitch
+                {{-- {{ strtoupper($locale) }} --}}
             @endif
         @endforeach
     </button>
@@ -29,15 +42,17 @@
 
                     @switch(strtolower($locale))
                         @case('uz')
-                            O'zbekcha
+                            <img src="/assets/images/uz-92x50.png" class="w-8 h-4 mr-2" alt="">
+                            {{ strtoupper("O'zbekcha") }}
+                        @break
+
+                        @case('qr')
+                            <img src="/assets/images/qr-92x54.png" class="w-8 h-4 mr-2" alt="">
+                            {{ strtoupper('Qaraqalpaqsha') }}
                         @break
 
                         @case('oz')
                             Ўзбекча
-                        @break
-
-                        @case('qr')
-                            Qaraqalpaqsha
                         @break
 
                         @case('kr')

@@ -97,9 +97,9 @@ return [
 
     'available_locales' => [
         'uz',
-        'oz',
+        // 'oz',
         'qr',
-        'kr',
+        // 'kr',
     ],
     'fallback_locale' => 'uz',
 

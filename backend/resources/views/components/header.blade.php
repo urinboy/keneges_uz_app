@@ -27,7 +27,18 @@
         <ul class="flex items-center flex-shrink-0 space-x-6">
             <x-lang />
             <!-- Profile menu -->
-
+            {{-- <a class="mobile-menu-toggler flex md:hidden items-center h-full mr-auto px-5 -ml-5" href="javascript:;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-bar-chart-2 w-5 h-5 transform rotate-90">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg> </a>
+            <div class="h-full flex items-center">
+                <div class="mr-3">Dark Mode</div>
+                <input class="form-check-switch" type="checkbox" id="dark-mode-switcher" checked="true">
+            </div> --}}
             <li class="relative">
                 <button
                     class="flex justify-between align-center  rounded-full focus:shadow-outline-blue focus:outline-none"

@@ -33,6 +33,7 @@
             </svg>
             <span class="ml-4">{{ __('pages.profile') }}</span>
         </x-sidebar-link>
+
         <x-sidebar-link href="#">
             <svg class="h-4 w-4 font-semibold" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -44,7 +45,7 @@
             <span class="ml-4">{{ __('pages.settings') }}</span>
         </x-sidebar-link>
 
-        <x-sidebar-link :href="route('blocks')"  :active="request()->routeIs('blocks')">
+        <x-sidebar-link :href="route('blocks')" :active="request()->routeIs('blocks')">
             <svg class="h-4 w-4 font-semibold" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -52,6 +53,32 @@
                 </path>
             </svg>
             <span class="ml-4">{{ __('pages.blocks') }}</span>
+        </x-sidebar-link>
+
+        <x-sidebar-link :href="route('roles.index')" :active="request()->routeIs('roles.index')">
+            <svg class="h-4 w-4 font-semibold" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" />
+                <path
+                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <circle cx="12" cy="12" r="3" />
+            </svg>
+            <span class="ml-4">{{ __('Roles and permission') }}</span>
+        </x-sidebar-link>
+
+        <x-sidebar-link :href="route('users.index')" :active="request()->routeIs('users.index')">
+            <svg class="h-4 w-4 font-semibold"  width="24" height="24"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            {{-- <svg class="h-4 w-4 font-semibold" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" />
+                <path
+                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <circle cx="12" cy="12" r="3" />
+            </svg> --}}
+            <span class="ml-4">{{ __('pages.users') }}</span>
         </x-sidebar-link>
 
 

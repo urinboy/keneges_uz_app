@@ -10,6 +10,7 @@ return [
     */
 
     'save' => 'Saqlash',
+    'create' => 'Yaratish',
     'show' => 'Ko\'rish',
     'update' => 'Yangilash',
     'delete' => 'O\'chirish',

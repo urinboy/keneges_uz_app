@@ -25,7 +25,7 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"  rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -52,11 +52,19 @@
             <main class="h-full overflow-y-auto mb-3">
                 <div class="container px-6 py-4 mx-auto grid">
                     <!-- Page Heading -->
-                    @if (isset($header))
-                        <h2 class="my-3 text-2xl font-semibold text-gray-700 dark:text-gray-200">
-                            {{ $header }}
-                        </h2>
-                    @endif
+                    <div class="inline-flex items-center justify-between">
+                        @if (isset($header))
+                            <h2 class="my-3 text-2xl font-semibold text-gray-700 dark:text-gray-200">
+                                {{ $header }}
+                            </h2>
+                        @endif
+                        
+                        @if (isset($create_btn))
+                                {{ $create_btn }}
+                        @endif
+                         
+                    </div>
+
                     {{ $slot }}
 
                 </div>
@@ -84,7 +92,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
-    
+
 </body>
 
 </html>
