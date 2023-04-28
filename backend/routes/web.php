@@ -15,14 +15,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/portfolio', function () {
+    return view('portfolio.index');
+});
+
+
 Route::get('/', function () {
     return redirect(app()->getLocale());
 });
 
+
 Route::prefix('{locale}')
     ->where(['locale' => '[a-zA-Z]{2}'])
     ->middleware('setlocale')
-    ->group(function ($locale) {
+    ->group(function () {
 
         Route::controller(PageController::class)
             ->middleware(['auth', 'verified'])

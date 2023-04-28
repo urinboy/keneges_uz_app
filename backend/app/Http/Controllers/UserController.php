@@ -75,7 +75,9 @@ class UserController extends Controller
     // }
     public function show(Request $request)
     {
-        dd($request);
+        $user = User::latest()->get();
+        return view('admin.users.show', compact('user'));
+        // dd($request);
     }
     /**
      * Show the form for editing the specified resource.
