@@ -6,16 +6,18 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.1.0-20.0.dev <4.0.0'
+  sdk: '>=3.0.0-417.4.beta <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
   animated_splash_screen: ^1.2.0
   cupertino_icons: ^1.0.2
-  lottie: ^2.3.2
+  lottie: ^2.3.2 
   google_fonts: ^4.0.4
-  flutter_native_splash: ^2.2.19
+  fluentui_icons: ^1.0.0
+  flutter_native_splash: ^2.3.1
+  msix: ^3.11.1
 
 dev_dependencies:
   flutter_test:
@@ -25,14 +27,12 @@ dev_dependencies:
 flutter_native_splash: 
   color: "#f7f6f1"
   color_dark: "#272727"
-  image: assets/images/klogofull.png
+  image: lib/images/k-logo-full-blue.png
   height: 190
-  image_dark: assets/images/klogofull.png
+  image_dark: lib/images/k-logo-full-white.png
 
 flutter:
-
   uses-material-design: true
-
 
   assets:
     - assets/images/

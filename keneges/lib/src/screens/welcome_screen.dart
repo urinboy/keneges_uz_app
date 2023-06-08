@@ -13,7 +13,7 @@ class WelcomeScreen extends StatelessWidget {
         body: SingleChildScrollView(
           child: Center(
             child: Column(
-              children: [Text("Welcome PAge")],
+              children: [Text("Welcome Page")],
             ),
           ),
         ),

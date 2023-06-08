@@ -1,9 +1,12 @@
 import 'package:Keneges/src/pages/my_home_page.dart';
 import 'package:flutter/material.dart';
-// import 'package:keneges/src/screens/splash_screen.dart';
 import 'package:Keneges/src/utils/theme/theme.dart';
+// import 'package:Keneges/src/screens/splash_screen.dart';
 
 void main() {
+  //   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+  //   statusBarColor: Colors.transparent
+  // ));
   runApp(const MyApp());
 }
 
@@ -20,6 +23,7 @@ class MyApp extends StatelessWidget {
       darkTheme: UAppTheme.darkTheme,
       themeMode: ThemeMode.system,
       home: const MyHomePage(),
+      // home: SplashScreen(),
     );
   }
 }

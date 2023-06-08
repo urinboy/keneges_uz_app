@@ -3,6 +3,8 @@ import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:Keneges/src/pages/my_home_page.dart';
 
 class SplashScreen extends StatelessWidget {
+  const SplashScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +30,7 @@ class SplashScreen extends StatelessWidget {
                 backgroundColor: Colors.white,
                 duration: 3000,
               ),
-              Text("Keneges.uz"),
+              const Text("Keneges.uz"),
             ],
           ),
         ),
